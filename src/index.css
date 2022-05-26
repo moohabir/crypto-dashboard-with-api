@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+}
+.app-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  padding: 5px;
+  background-color: indigo;
+  height: 90vh;
+  width: 100%;
+}
+.currency-converter {
+  background-color: blue;
+}
+.exchange-rate {
+  background-color: red;
+}
+.news-feed {
+  background-color: green;
+}
+.title {
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+}
