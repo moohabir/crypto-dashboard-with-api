@@ -51,51 +51,47 @@ function CurrencyConverter() {
         <table>
           <tbody>
             <tr>
+              <td>Primary Currency: </td>
               <td>
-                <h4>Primary Currency: </h4>
-                <td>
-                  <input
-                    type="number"
-                    name="currency-amount-1"
-                    value={amount}
-                    onChange={(e) => setAmount(e.target.value)}
-                  />
-                </td>
-                <td>
-                  <select
-                    value={chosenPrimaryCurrency}
-                    name="currency-option-1"
-                    onChange={(e) => setChosenPrimaryCurrency(e.target.value)}
-                  >
-                    {currencies.map((currency, _index) => (
-                      <option key={_index}>{currency}</option>
-                    ))}
-                  </select>
-                </td>
+                <input
+                  type="number"
+                  name="currency-amount-1"
+                  value={amount}
+                  onChange={(e) => setAmount(e.target.value)}
+                />
+              </td>
+              <td>
+                <select
+                  value={chosenPrimaryCurrency}
+                  name="currency-option-1"
+                  onChange={(e) => setChosenPrimaryCurrency(e.target.value)}
+                >
+                  {currencies.map((currency, _index) => (
+                    <option key={_index}>{currency}</option>
+                  ))}
+                </select>
               </td>
             </tr>
             <tr>
+              <td>Secondary Currency: </td>
               <td>
-                <h4>Secondary Currency: </h4>
-                <td>
-                  <input
-                    type="number"
-                    name="currency-amount-2"
-                    value={result}
-                    disabled={true}
-                  />
-                </td>
-                <td>
-                  <select
-                    value={chosenSecondaryCurrency}
-                    name="currency-option-2"
-                    onChange={(e) => setChosenSecondarry(e.target.value)}
-                  >
-                    {currencies.map((currency, _index) => (
-                      <option key={_index}>{currency}</option>
-                    ))}
-                  </select>
-                </td>
+                <input
+                  type="number"
+                  name="currency-amount-2"
+                  value={result}
+                  disabled={true}
+                />
+              </td>
+              <td>
+                <select
+                  value={chosenSecondaryCurrency}
+                  name="currency-option-2"
+                  onChange={(e) => setChosenSecondarry(e.target.value)}
+                >
+                  {currencies.map((currency, _index) => (
+                    <option key={_index}>{currency}</option>
+                  ))}
+                </select>
               </td>
             </tr>
           </tbody>
